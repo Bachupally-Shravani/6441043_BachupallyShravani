@@ -1,0 +1,35 @@
+/* ================================
+   3. Selectors Playground
+   ================================ */
+
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for all h2 elements */
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Banner style using ID selector */
+#mainHeader {
+  background-color: #cce5ff;
+  padding: 10px;
+}
+
+/* Style for event cards using class */
+.eventCard {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+/* Grouping selector */
+h3, p {
+  font-family: Arial, sans-serif;
+  color: #555;
+}
