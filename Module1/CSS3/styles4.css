@@ -1,0 +1,28 @@
+/* ================================
+   6. Link and List Styling
+   ================================ */
+
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: orange;
+}
+a:active {
+  color: red;
+}
+
+.nav-menu {
+  list-style-type: none;
+  list-style-position: inside;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+.nav-menu li {
+  margin: 0 10px;
+}
