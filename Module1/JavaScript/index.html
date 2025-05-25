@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Community Event Portal</title>
+  <meta charset="UTF-8" />
+  <title>Community Event Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .event-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: none; /* For fadeIn/fadeOut */
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    #spinner {
+      font-weight: bold;
+      color: blue;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Community Event Portal</h1>
-    <script src="main.js"></script>
+
+  <h1>Welcome to the Community Event Portal</h1>
+
+  <!-- Module 8: Category Filter -->
+  <label for="categorySelect">Filter by Category:</label>
+  <select id="categorySelect">
+    <option value="All">All</option>
+    <option value="Music">Music</option>
+    <option value="Workshop">Workshop</option>
+    <option value="Tech">Tech</option>
+  </select>
+
+  <!-- Module 8: Search Input -->
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search events by name..."
+  />
+
+  <!-- Module 7: Events Container -->
+  <div id="events">
+    <!-- Event cards will be appended dynamically -->
+  </div>
+
+  <!-- Module 8: Register Button -->
+  <button id="registerBtn">Register</button>
+
+  <!-- Module 11: Registration Form -->
+  <h2>Event Registration</h2>
+  <form id="registrationForm">
+    <input name="name" placeholder="Your Name" required />
+    <input name="email" type="email" placeholder="Your Email" required />
+    <select name="event">
+      <option value="Music Fest">Music Fest</option>
+      <option value="Workshop on Baking">Workshop on Baking</option>
+      <option value="Tech Meetup">Tech Meetup</option>
+    </select>
+    <button type="submit">Sign Up</button>
+    <div id="formError" class="error"></div>
+    <div id="formSuccess"></div>
+  </form>
+
+  <!-- Module 9: Loading Spinner -->
+  <div id="spinner" style="display: none;">Loading events...</div>
+
+  <!-- Module 13: Debug Logs, Module 12: Simulated Delay Output -->
+  <div id="debugOutput"></div>
+
+  <!-- Scripts for All JS Modules -->
+  <script src="main.js"></script>
+  <script src="module2_syntax.js"></script>
+  <script src="module3_conditions.js"></script>
+  <script src="module4_functions.js"></script>
+  <script src="module5_objects.js"></script>
+  <script src="module6_arrays.js"></script>
+  <script src="module7_dom.js"></script>
+  <script src="module8_events.js"></script>
+  <script src="module9_async.js"></script>
+  <script src="module10_es6.js"></script>
+  <script src="module11_forms.js"></script>
+  <script src="module12_fetch.js"></script>
+  <script src="module13_debugging.js"></script>
+
+  <!-- jQuery + Module 14: jQuery Enhancements -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="module14_jquery.js"></script>
+
 </body>
 </html>
