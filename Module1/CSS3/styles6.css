@@ -1,0 +1,21 @@
+/* ================================
+   8. Box Model & Layout Control
+   ================================ */
+
+.eventCard {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 15px;
+}
+
+input:focus {
+  outline: 2px solid #007BFF;
+}
+
+/* Visibility differences */
+.hidden-element {
+  visibility: hidden;
+}
+.none-element {
+  display: none;
+}
