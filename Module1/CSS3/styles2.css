@@ -1,0 +1,16 @@
+/* ================================
+   4. Color & Background Styling
+   ================================ */
+
+/* Body with background image and fallback */
+body {
+  background: #e0e0e0 url('images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Section header gradient */
+h2 {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px;
+}
