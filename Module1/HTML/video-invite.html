@@ -1,1 +1,11 @@
+<video id="promoVideo" controls oncanplay="document.getElementById('videoMsg').innerText='Video ready to play';">
+    <source src="eventpromo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<p id="videoMsg"></p>
 
+<script>
+    window.onbeforeunload = function() {
+        return "Are you sure you want to leave? Your form data may be lost.";
+    };
+</script>
