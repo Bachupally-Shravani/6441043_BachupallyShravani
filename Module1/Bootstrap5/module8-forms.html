@@ -1,0 +1,46 @@
+<h1>Module 8: Forms</h1>
+
+<!-- Exercise 8.1 -->
+<section>
+  <h2>Exercise 8.1</h2>
+  <p>Create a registration form using <code>form-control</code>, <code>form-check</code>, and <code>input-group</code>.</p>
+  <form>
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="username" placeholder="Enter username">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" value="" id="agree">
+      <label class="form-check-label" for="agree">
+        I agree to the terms and conditions
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</section>
+
+<hr>
+
+<!-- Exercise 8.2 -->
+<section>
+  <h2>Exercise 8.2</h2>
+  <p>Style a login form using <code>form-floating</code>.</p>
+  <form style="max-width: 400px;">
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+      <label for="floatingEmail">Email address</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Login</button>
+  </form>
+</section>
