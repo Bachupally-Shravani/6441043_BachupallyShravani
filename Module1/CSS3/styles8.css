@@ -1,9 +1,28 @@
 /* ================================
-   9. Multi-Column Layout
+   10. Responsive Web Design
    ================================ */
 
-.news-article {
-  column-count: 2;
-  column-gap: 30px;
-  column-rule: 1px solid gray;
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .eventCard {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Bonus: Flexbox */
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
 }
