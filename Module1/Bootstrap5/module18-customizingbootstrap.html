@@ -1,0 +1,29 @@
+<h1>Module 18: Customizing Bootstrap</h1>
+
+<!-- Exercise 18.1 -->
+<section>
+  <h2>Exercise 18.1</h2>
+  <p>Override Bootstrap classes using custom CSS for buttons and cards.</p>
+  <style>
+    .btn-custom {
+      background-color: #6c757d;
+      color: white;
+    }
+    .card-custom {
+      border: 2px solid #6c757d;
+    }
+  </style>
+  <button class="btn btn-custom mb-3">Custom Button</button>
+  <div class="card card-custom p-3">
+    <h5 class="card-title">Custom Card</h5>
+    <p class="card-text">This card uses a custom border color.</p>
+  </div>
+</section>
+
+<!-- Exercise 18.2 -->
+<section>
+  <h2>Exercise 18.2</h2>
+  <p>Use Sass to change primary color and recompile Bootstrap (just provide Sass code here).</p>
+  <pre><code>$primary: #6610f2;
+@import "bootstrap";</code></pre>
+</section>
